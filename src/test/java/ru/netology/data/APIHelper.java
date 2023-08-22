@@ -61,7 +61,7 @@ public class APIHelper {
                 .spec(requestSpec)
                 .header("Authorization", "Bearer " + token)
                 .when()
-                .post("/api/cards")
+                .get("/api/cards")
                 .then().log().all()
                 .statusCode(statusCode)
                 .extract()
